@@ -279,7 +279,7 @@ bot.use(async (ctx, next) => {
     if (bannedUsers.has(uid)) {
       const b = bannedUsers.get(uid) || {};
       const reason = b.reason ? `\n\n📝 Reason: ${b.reason}` : '';
-      return ctx.reply(`⛔ You are banned from using this bot ab soja bskd .${reason}`);
+      return ctx.reply(`⛔ You are banned from using this bot ab soja bskd @babysojao .${reason}`);
     }
   } catch (_) {}
   return next();
